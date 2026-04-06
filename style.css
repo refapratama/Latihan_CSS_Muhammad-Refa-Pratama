@@ -1,58 +1,73 @@
-/* Aturan Body: Latar belakang abu-abu muda */
 body {
-    background-color: #f4f4f4;
-    font-family: sans-serif; /* Tipografi Sans-Serif */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+  background-color: #f4f4f4;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* Card (The Box Model): Kontainer Utama */
 .card {
-    background-color: #ffffff; /* Warna latar putih */
-    width: 350px;              /* Lebar tetap 350px */
-    padding: 20px;             /* Padding agar konten tidak menempel ke tepi */
-    margin: 50px auto;         /* Berada di tengah halaman */
-    border-radius: 15px;       /* Sudut melengkung */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
-    text-align: center;        /* Teks berada di tengah */
+  background-color: white;
+  width: 350px;
+  padding: 30px 20px;
+  margin: 50px auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
 }
 
-/* Styling tambahan untuk foto agar rapi */
-.card img {
-    border-radius: 50%;
-    margin-bottom: 15px;
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 3px solid #f4f4f4;
 }
 
-/* Styling Judul dan Paragraf */
-.card h1 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
+h1 {
+  font-size: 22px;
+  color: #1c1916;
+  margin: 0 0 8px 0;
 }
 
-.card p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
-    margin-bottom: 20px;
+.bio {
+  font-size: 14px;
+  color: #7a7068;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
 }
 
-/* Aturan Button */
-.card button {
-    background-color: #007bff; /* Warna latar biru */
-    color: white;
-    border: none;              /* Hapus garis tepi */
-    padding: 10px 20px;        /* Padding tombol */
-    border-radius: 5px;
-    cursor: pointer;           /* Kursor menjadi pointer */
-    font-weight: 600;
-    transition: background 0.3s ease;
+/* Styling link WhatsApp */
+.wa-link {
+  color: #25d366; /* Warna khas WA */
+  text-decoration: none;
+  font-weight: 500;
 }
 
-/* Efek hover sederhana (opsional tapi bagus untuk nilai estetika) */
-.card button:hover {
-    background-color: #0056b3;
+.wa-link:hover {
+  text-decoration: underline;
+}
+
+/* Styling Button agar tidak berubah saat dibungkus link */
+.btn-wrapper {
+  text-decoration: none;
+}
+
+button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%; /* Biar tombolnya panjang memenuhi card */
+}
+
+button:hover {
+  background-color: #0052a3;
 }
