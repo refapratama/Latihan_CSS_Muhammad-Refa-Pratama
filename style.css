@@ -1,0 +1,73 @@
+body {
+  background-color: #f4f4f4;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: white;
+  width: 350px;
+  padding: 30px 20px;
+  margin: 50px auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 3px solid #f4f4f4;
+}
+
+h1 {
+  font-size: 22px;
+  color: #1c1916;
+  margin: 0 0 8px 0;
+}
+
+.bio {
+  font-size: 14px;
+  color: #7a7068;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+}
+
+/* Styling link WhatsApp */
+.wa-link {
+  color: #25d366; /* Warna khas WA */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.wa-link:hover {
+  text-decoration: underline;
+}
+
+/* Styling Button agar tidak berubah saat dibungkus link */
+.btn-wrapper {
+  text-decoration: none;
+}
+
+button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%; /* Biar tombolnya panjang memenuhi card */
+}
+
+button:hover {
+  background-color: #0052a3;
+}
