@@ -1,73 +1,77 @@
-body {
-  background-color: #f4f4f4;
-  font-family: 'Inter', sans-serif;
+/* ===========================
+   Reset & Body
+   =========================== */
+* {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  /* Latar belakang abu-abu muda */
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===========================
+   Card — Box Model Utama
+   =========================== */
 .card {
-  background-color: white;
-  width: 350px;
-  padding: 30px 20px;
-  margin: 50px auto;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-  text-align: center;
+  background-color: #ffffff;   /* Latar putih */
+  width: 350px;                /* Lebar tetap */
+  padding: 30px 20px;          /* Konten tidak menempel ke tepi */
+  margin: 50px auto;           /* Tengah halaman, jarak atas-bawah */
+  border-radius: 15px;         /* Sudut melengkung */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); /* Bayangan halus */
+  text-align: center;          /* Semua teks rata tengah */
 }
 
-.profile-img {
+/* ===========================
+   Foto Profil
+   =========================== */
+.foto-profil {
   width: 120px;
   height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: 50%;          /* Membuat foto menjadi bulat */
   margin-bottom: 16px;
-  border: 3px solid #f4f4f4;
+  border: 3px solid #e6f1fb;
 }
 
+/* ===========================
+   Tipografi
+   =========================== */
 h1 {
   font-size: 22px;
-  color: #1c1916;
-  margin: 0 0 8px 0;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 10px;
 }
 
 .bio {
   font-size: 14px;
-  color: #7a7068;
+  color: #666666;
   line-height: 1.6;
-  margin: 0 0 24px 0;
+  margin-bottom: 24px;
 }
 
-/* Styling link WhatsApp */
-.wa-link {
-  color: #25d366; /* Warna khas WA */
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.wa-link:hover {
-  text-decoration: underline;
-}
-
-/* Styling Button agar tidak berubah saat dibungkus link */
-.btn-wrapper {
-  text-decoration: none;
-}
-
-button {
-  background-color: #0066cc;
-  color: white;
+/* ===========================
+   Tombol WhatsApp
+   =========================== */
+.btn-hubungi {
+  display: block;
+  background-color: #25D366;   /* Warna hijau WhatsApp */
+  color: #ffffff;
   border: none;
-  padding: 12px 28px;
+  padding: 12px 32px;
   border-radius: 8px;
   font-size: 14px;
-  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
-  width: 100%; /* Biar tombolnya panjang memenuhi card */
+  text-decoration: none;       /* Hapus garis bawah link */
+  width: 100%;
+  box-sizing: border-box;
 }
 
-button:hover {
-  background-color: #0052a3;
+.btn-hubungi:hover {
+  background-color: #1ebe57;
 }
